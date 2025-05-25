@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deskripsi Produk - Rhizzz STORE</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #000;
+        }
+        .logo {
+            height: 70px;
+        }
+        .header-title {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .navbar {
+            display: flex;
+            gap: 30px;
+            background: #222;
+            padding: 15px 40px 15px 40px;
+            align-items: center;
+            margin: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 16px;
+        }
+        .navbar a:hover {
+            color: gold;
+            background: #333;
+            border-radius: 5px;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 40px;
+        }
+        .foto-produk {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            background: #fff;
+        }
+        .deskripsi-produk {
+            margin-left: 40px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .deskripsi-produk h2 {
+            margin-top: 0;
+            color: gold;
+        }
+        .btn-kembali {
+            display: inline-block;
+            background-color: gold;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 30px;
+            width: fit-content;
+        }
+        .btn-kembali:hover {
+            background: #ffe066;
+        }
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            margin-left: 40px;
+            min-width: 180px;
+        }
+        .social-card {
+            background-color: #dcdcdc;
+            color: black;
+            border-radius: 10px;
+            padding: 20px 10px;
+            width: 140px;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .social-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .social-card span {
+            font-weight: bold;
+            color: #222;
+        }
+        @keyframes marquee {
+            0%   { transform: translateX(100%);}
+            100% { transform: translateX(-100%);}
+        }
+        .footer-marquee {
+            width: 100%;
+            background: #222;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 10px 0;
+            overflow: hidden;
+            z-index: 100;
+            text-align: left;
+        }
+        .footer-marquee span {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 12s linear infinite;
+            font-weight: bold;
+            font-size: 1.1em;
+            letter-spacing: 2px;
+        }
+        @media (max-width: 900px) {
+            .main-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .deskripsi-produk {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+            .social-container {
+                flex-direction: row;
+                margin-left: 0;
+                margin-top: 30px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyFD8aELqetSRj8D6PTjDJNMN0Psrm8oI0Q&s" alt="Logo Kiri" class="logo">
+        <span class="header-title">Rhizzz STORE</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyFD8aELqetSRj8D6PTjDJNMN0Psrm8oI0Q&s" alt="Logo Kanan" class="logo">
+    </div>
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="produk.html">PRODUK</a>
+        <a href="about.html">ABOUT</a>
+        <a href="kontak.html">KONTAK</a>
+    </nav>
+    <div style="display: flex; flex-direction: row;">
+        <div class="main-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAN-qdPenRpybH-Gue_yWeU0v17qWNg1qlIw&s" alt="iPhone 15" class="foto-produk">
+            <div class="deskripsi-produk">
+                <h2>iPhone 15</h2>
+                <p>iPhone 15 adalah smartphone terbaru dari Apple yang menawarkan desain premium, performa tinggi, dan fitur-fitur canggih. Dengan layar Super Retina XDR, kamera yang ditingkatkan, dan chip A16 Bionic, iPhone 15 memberikan pengalaman pengguna yang luar biasa.</p>
+                <a href="produk.html" class="btn-kembali">Kembali ke Produk</a>
+            </div>
+        </div>
+        <div class="social-container">
+            <div class="social-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </div>
+            <div class="social-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram">
+                <span>Instagram</span>
+            </div>
+            <div class="social-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/016/716/450/non_2x/tiktok-icon-free-png.png" alt="Tiktok">
+                <span>Tiktok</span>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-marquee">
+        <span>Selamat datang di Rhizzz Store</span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhizzz STORE</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #000;
+        }
+        .logo {
+            height: 70px;
+        }
+        .header-title {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .navbar {
+            display: flex;
+            gap: 30px;
+            background: #222;
+            padding: 15px 40px 15px 40px;
+            align-items: center;
+            margin: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 16px;
+        }
+        .navbar a:hover {
+            color: gold;
+            background: #333;
+            border-radius: 5px;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+        .card {
+            background-color: #dcdcdc;
+            color: black;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .btn-beli {
+            display: inline-block;
+            background-color: gold;
+            color: black;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .btn-beli:hover {
+            background: #ffe066;
+        }
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            margin-right: 40px;
+            min-width: 180px;
+        }
+        .social-card {
+            background-color: #dcdcdc;
+            color: black;
+            border-radius: 10px;
+            padding: 20px 10px;
+            width: 140px;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .social-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .social-card span {
+            font-weight: bold;
+            color: #222;
+        }
+        .footer-marquee {
+    width: 100%;
+    background: #222;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    overflow: hidden;
+    z-index: 100;
+    text-align: left;
+}
+.footer-marquee span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+@keyframes marquee {
+    0%   { transform: translateX(100%);}
+    100% { transform: translateX(-100%);}
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyFD8aELqetSRj8D6PTjDJNMN0Psrm8oI0Q&s" alt="Logo Kiri" class="logo">
+        <span class="header-title">Rhizzz STORE</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyFD8aELqetSRj8D6PTjDJNMN0Psrm8oI0Q&s" alt="Logo Kanan" class="logo">
+    </div>
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="produk.html">PRODUK</a>
+        <a href="about.html">ABOUT</a>
+        <a href="kontak.html">KONTAK</a>
+    </nav>
+    <div class="main-content" style="display: flex; flex-direction: row; align-items: flex-start;">
+        <div style="width:100%;">
+            <div class="container">
+                <div class="card">
+                    <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2021/4/8/9cc03958-8e48-4ef9-8bcc-19860ba0a190.jpg" alt="Jam Fossil">
+                    <h3>iPhone XR</h3>
+                    <p>Rp.3.500.000</p>
+                    <a href="deskripsi1.html" class="btn-beli">BELI SEKARANG</a>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODVFE2WI7udr7stJQFkiAlgDSGE3dpTqeTw&s" alt="Jam Casio">
+                    <h3>iPhone 11</h3>
+                    <p>Rp.4.500.000</p>
+                    <a href="deskripsi2.html" class="btn-beli">BELI SEKARANG</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2021/1/26/3c460279-87a8-44cf-881c-2cc8280b0912.jpg" alt="Jam Seiko">
+                    <h3>iPhone 12 </h3>
+                    <p>Rp14.499.000</p>
+                    <a href="deskripsi3.html" class="btn-beli">BELI SEKARANG</a>
+                </div>
+                <div class="card">
+                    <img src="https://buy.gazelle.com/cdn/shop/files/iPhone_13_Pro_Max_-_Black_-_Overlap_Trans-cropped.jpg?v=1746740285" alt="Jam Rolex">
+                    <h3>iPhone 13 </h3>
+                    <p> Rp 10.299.000.</p>
+                    <a href="deskripsi4.html" class="btn-beli">BELI SEKARANG</a>
+                </div>
+                <div class="card">
+                    <img src="https://ibox.co.id/_next/image?url=https%3A%2F%2Fcdnpro.eraspace.com%2Fmedia%2Fcatalog%2Fproduct%2Fi%2Fp%2Fiphone_14_blue_6_1.jpg&w=3840&q=45" alt="Jam Omega">
+                    <h3>iPhone 14</h3>
+                    <p>	Rp11.499.000</p>
+                    <a href="deskripsi5.html" class="btn-beli">BELI SEKARANG</a>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAN-qdPenRpybH-Gue_yWeU0v17qWNg1qlIw&s" alt="Jam Citizen">
+                    <h3>iPhone 15</h3>
+                    <p>	Rp11.499.000</p>
+                    <a href="deskripsi6.html" class="btn-beli">BELI SEKARANG</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-container">
+            <div class="social-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </div>
+            <div class="social-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram">
+                <span>Instagram</span>
+            </div>
+            <div class="social-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/016/716/450/non_2x/tiktok-icon-free-png.png" alt="Tiktok">
+                <span>Tiktok</span>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-marquee">
+        <span>Selamat datang di Rhizzz Store</span>
+    </footer>
+</body>
+</html>
+</body>
+</html>

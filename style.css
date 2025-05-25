@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  background: url('https://cdn0-production-images-kly.akamaized.net/f_GNAfG5XLBywhkvhWOHD4DmjMQ=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4239901/original/028466500_1669386239-shutterstock_1863024973.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.navbar {
+  background: transparent;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.navbar ul li a:hover {
+  color: #2352ae;
+}
+.content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.content h1 {
+  font-size: 60px;
+}
+
+.content h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+        .layout {
+            display: flex;
+        }
+        .sidebar {
+            width: 160px;
+            background: #222;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 40px 20px 0 20px;
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: block;
+        }
+        .sidebar a:hover {
+            color: gold;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #000;
+        }
+        .logo {
+            height: 70px;
+        }
+        .header-title {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #dcdcdc;
+            color: black;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .btn-beli {
+            display: inline-block;
+            background-color: gold;
+            color: black;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .btn-beli:hover {
+            background: #ffe066;
+        }
+        .social {
+            position: fixed;
+            top: 150px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .social img {
+            width: 50px;
+            height: 50px;
+        }
